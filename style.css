@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Roboto+Mono:wght@300&display=swap");
+/*
+font-family: 'Monomaniac One', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #24292f;
+}
+body main {
+  width: 70%;
+  margin: auto;
+}
+
+.navbar-nav .navbar-nav__title {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 5rem;
+  color: whitesmoke;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.main-container .main-player-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .main-player-options button {
+  background-color: #24292f;
+  border: 1px solid whitesmoke;
+  outline: none;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transform: scale(1);
+}
+.main-container .main-player-options button .image-option {
+  width: 7rem;
+  aspect-ratio: 1/1;
+}
+.main-container .main-player-options h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  color: whitesmoke;
+  letter-spacing: 0.5rem;
+}
+.main-container .main-player-options button:focus {
+  border: 1px solid orange;
+  transform: scale(1.1);
+  transition: all 100ms ease-in-out;
+}
+.main-container .main-player-options button:hover,
+.main-container .main-player-options button:active {
+  background-color: #3a424c;
+}
+.main-container .main-result {
+  background-color: #2b3138;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  color: whitesmoke;
+  letter-spacing: 0.5rem;
+  width: 100%;
+}
+.main-container .main-result fieldset {
+  height: 35rem;
+  border: 1px solid rgba(245, 245, 245, 0.405);
+  color: whitesmoke;
+  padding: 1.5rem;
+}
+.main-container .main-result fieldset figcaption {
+  text-align: center;
+}
+.main-container .main-result fieldset .main-result__round {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-result fieldset .main-result__round figure {
+  height: 15rem;
+}
+.main-container .main-result .main-result__image {
+  width: 10rem;
+  aspect-ratio: 1/1;
+}
+
+.main-score {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  color: whitesmoke;
+  letter-spacing: 0.5rem;
+}
+.main-score fieldset {
+  border: 1px solid rgba(245, 245, 245, 0.405);
+  color: whitesmoke;
+  padding: 1rem;
+  line-height: 2rem;
+}
+.main-score fieldset span {
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=style.css.map */

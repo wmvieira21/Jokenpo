@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="joquempo rock scissor paper">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Joquempo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-nav">
+            <h1 class="navbar-nav__title">Joquempo</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="main-player-options">
+                <h1>PLAYER 1</h1>
+                <button type="button" value="rock" class="btn-player" id="btn-rock">
+                    <img class="image-option" src="./images/rock.png" alt="rock">
+                </button>
+                <button type="button" value="paper" class="btn-player" id="btn-paper">
+                    <img class="image-option" src="./images/paper.png" alt="paper">
+                </button>
+                <button type="button" value="scissor" class="btn-player" id="btn-scissor">
+                    <img class="image-option" src="./images/scissor.png" alt="scissor">
+                </button>
+            </section>
+
+            <section class="main-result">
+                <fieldset>
+                    <legend id="round">Round <span>0</span></legend>
+                    <div class="main-result__round">
+                        <figure>
+                            <img class="main-result__image" id="main-result__player" src="" alt="player play">
+                            <figcaption>You</figcaption>
+                        </figure>
+                        <span>VS</span>
+                        <figure>
+                            <img class="main-result__image" id="main-result__computer" src="" alt="computer play">
+                            <figcaption>Computer</figcaption>
+                        </figure>
+                    </div>
+                </fieldset>
+            </section>
+        </div>
+
+        <section class="main-score">
+            <fieldset>
+                <legend>Score</legend>
+                <p id="win">Wins: <span>0</span></p>
+                <p id="loss">Loss: <span>0</span></p>
+                <p id="tie">Ties: <span>0</span></p>
+            </fieldset>
+        </section>
+
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
