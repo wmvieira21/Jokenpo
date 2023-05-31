@@ -71,7 +71,6 @@ export default class Game {
         }
     }
 
-
     buildScore() {
         let countWins = +init.scoreSection[0].firstElementChild.innerHTML;
         let countLoss = +init.scoreSection[1].firstElementChild.innerHTML;
