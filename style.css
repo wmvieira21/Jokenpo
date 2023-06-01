@@ -13,7 +13,7 @@ body {
   background-color: #24292f;
 }
 body main {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -27,7 +27,7 @@ body main {
 
 .main-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 2rem;
 }
 .main-container .main-player-options {
@@ -41,12 +41,12 @@ body main {
   outline: none;
   border-radius: 50%;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   cursor: pointer;
   transform: scale(1);
 }
 .main-container .main-player-options button .image-option {
-  width: 7rem;
+  width: 6rem;
   aspect-ratio: 1/1;
 }
 .main-container .main-player-options h1 {
@@ -65,15 +65,14 @@ body main {
   background-color: #3a424c;
 }
 .main-container .main-result {
-  background-color: #2b3138;
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
   color: whitesmoke;
   letter-spacing: 0.5rem;
-  width: 100%;
+  width: 50rem;
 }
 .main-container .main-result fieldset {
-  height: 35rem;
+  height: 100%;
   border: 1px solid rgba(245, 245, 245, 0.405);
   color: whitesmoke;
   padding: 1.5rem;
@@ -99,14 +98,19 @@ body main {
   font-size: 1rem;
   color: whitesmoke;
   letter-spacing: 0.5rem;
+  width: 20rem;
 }
 .main-score fieldset {
   border: 1px solid rgba(245, 245, 245, 0.405);
   color: whitesmoke;
   padding: 1rem;
-  line-height: 2rem;
+  height: 100%;
+  width: 100%;
 }
-.main-score fieldset span {
+.main-score fieldset p {
+  margin-bottom: 2rem;
+}
+.main-score fieldset p span {
   font-weight: bolder;
 }
 

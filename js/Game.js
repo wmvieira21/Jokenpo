@@ -18,7 +18,7 @@ export default class Game {
         this.showRoundCanvas();
 
         this.buildScore();
-        
+
         this.incrementRound();
     }
 
@@ -76,9 +76,33 @@ export default class Game {
         let countLoss = +init.scoreSection[1].firstElementChild.innerHTML;
         let countTies = +init.scoreSection[2].firstElementChild.innerHTML;
 
-        if (this.computerChoice === this.playerChoice) {
-            init.scoreSection[2].firstElementChild.innerHTML = ++countTies;
+        if (this.playerChoice === this.computerChoice) {
+            countTies++;
+
+        } else if (this.playerChoice === 'rock') {
+            if (this.computerChoice === 'paper') {
+                countLoss++;
+            } else {
+                countWins++;
+            }
+        } else if (this.playerChoice === 'paper') {
+            if (this.computerChoice === 'scissor') {
+                countLoss++;
+            } else {
+                countWins++;
+            }
+
+        } else if (this.playerChoice === 'scissor') {
+            if (this.computerChoice === 'rock') {
+                countLoss++;
+            } else {
+                countWins++;
+            }
         }
+
+        init.scoreSection[0].firstElementChild.innerHTML = countWins;
+        init.scoreSection[1].firstElementChild.innerHTML = countLoss;
+        init.scoreSection[2].firstElementChild.innerHTML = countTies;
     }
 
     incrementRound() {
