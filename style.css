@@ -9,12 +9,21 @@ font-family: 'Roboto Mono', monospace;
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #24292f;
+  height: 100%;
 }
 body main {
   width: 80%;
   margin: auto;
+  height: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar-nav .navbar-nav__title {
