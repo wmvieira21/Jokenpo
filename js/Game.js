@@ -78,25 +78,32 @@ export default class Game {
 
         if (this.playerChoice === this.computerChoice) {
             countTies++;
+            this.setResultDesc('TIE');
 
         } else if (this.playerChoice === 'rock') {
             if (this.computerChoice === 'paper') {
                 countLoss++;
+                this.setResultDesc('LOSE');
             } else {
                 countWins++;
+                this.setResultDesc('WIN');
             }
         } else if (this.playerChoice === 'paper') {
             if (this.computerChoice === 'scissor') {
                 countLoss++;
+                this.setResultDesc('LOSE');
             } else {
                 countWins++;
+                this.setResultDesc('WIN');
             }
 
         } else if (this.playerChoice === 'scissor') {
             if (this.computerChoice === 'rock') {
                 countLoss++;
+                this.setResultDesc('LOSE');
             } else {
                 countWins++;
+                this.setResultDesc('WIN');
             }
         }
 
@@ -108,5 +115,9 @@ export default class Game {
     incrementRound() {
         let roundNumber = +init.roundNumber.firstElementChild.innerHTML;
         init.roundNumber.firstElementChild.innerHTML = ++roundNumber;
+    }
+
+    setResultDesc(result) {
+        init.resultDesc.innerHTML = result;
     }
 }

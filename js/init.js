@@ -4,3 +4,4 @@ export const playerHand = document.querySelector("#main-result__player");
 export const computerHand = document.querySelector("#main-result__computer");
 export const scoreSection = document.querySelectorAll(".main-score fieldset p");
 export const roundNumber = document.querySelector("#round");
+export const resultDesc = document.querySelector("#result-description");

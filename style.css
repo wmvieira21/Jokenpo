@@ -97,6 +97,14 @@ body main {
 .main-container .main-result fieldset .main-result__round figure {
   height: 15rem;
 }
+.main-container .main-result fieldset #result-description {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 5rem;
+  color: whitesmoke;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  display: block;
+}
 .main-container .main-result .main-result__image {
   width: 10rem;
   aspect-ratio: 1/1;

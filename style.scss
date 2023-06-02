@@ -12,6 +12,14 @@ $black-default-back: #24292f;
   letter-spacing: 0.5rem;
 }
 
+@mixin title-font {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 5rem;
+  color: whitesmoke;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,11 +46,7 @@ body {
 
 .navbar-nav {
   .navbar-nav__title {
-    font-family: "Monomaniac One", sans-serif;
-    font-size: 5rem;
-    color: whitesmoke;
-    letter-spacing: 0.5rem;
-    text-align: center;
+    @include title-font();
   }
 }
 
@@ -114,6 +118,12 @@ body {
           height: 15rem;
         }
       }
+
+      #result-description {
+        @include title-font();
+        display: block;
+      }
+
     }
 
     .main-result__image {
